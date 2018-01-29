@@ -1,0 +1,32 @@
+Questions:
+
+Git bash or cmd?  - bash
+
+
+Mark down - something like wiki syntax that git translates into HTML
+Mark down can be used in textual changes and in commit comments.
+# - one hash
+## - two hashes
+
+Some text
+
+### Third level 
+* bullet 1
+* bullet 2
+  * two spaces for intended bullet
+
+*[]  - indicates a check box (for checklist)
+...
+
+Create branch - e.g., for documentation ....
+
+@user (called at-mentioned) - in comments will lead to user's github account page.
+
+emoji: :   (start with colon - intellisense will show - emoji.github.com
+
+Revert - a merge
+
+
+Merge tool: google for git mergetool   // help .. github.com
+
+Search on GitHub: example-visualization
