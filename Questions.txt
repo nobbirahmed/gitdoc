@@ -1,7 +1,4 @@
-Questions:
-
-Git bash or cmd?  - bash
-
+Questions: Git bash or cmd?  - bash
 
 Mark down - something like wiki syntax that git translates into HTML
 Mark down can be used in textual changes and in commit comments.
