@@ -5,9 +5,6 @@ Compare local to remote files
 $ git status
 On branch master
 
-No commits yet
-
-nothing to commit (create/copy files and use "git add" to track)
 
 nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
 $ dir
