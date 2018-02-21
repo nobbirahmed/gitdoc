@@ -1,0 +1,122 @@
+Compare local to remote files
+==========================================
+
+
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ dir
+test.txt
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git add .
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git commit -m "asdfasdf"
+[master (root-commit) 9ace06a] asdfasdf
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git RESET HEAD
+fatal: cannot handle RESET.exe as a builtin
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git reset HEAD
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git add .
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   test.txt
+
+
+//////////////////////////////////////////////////////////////
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git reset HEAD .
+Unstaged changes after reset:
+M       test.txt
+
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git add .
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   test.txt
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git commit -m "asdfasdf"
+[master acdca9d] asdfasdf
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git reset HEAD~
+Unstaged changes after reset:
+M       test.txt
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nobi4775@NOBBIR MINGW64 ~/Documents/GitHub/project1 (master)
+$ git checkout -- .
