@@ -1,0 +1,27 @@
+From command line:
+
+>git clone “url …..” to_folder (from url to local folder)
+
+Do some editing of a file that we can want to modify
+
+>git diff (will show the difference due to changes)
+
+If we are satisfied:
+
+>git add file_name
+
+Create a local branch:
+
+>git checkout –b branch_name
+
+Git switches to the new branch. Now commit the changes:
+
+>git commit –m “write a meaningful comment”
+
+See what is done so far:
+>git log
+
+Send the changes to devtopia:
+>git push –u origin branch_name
+
+On the web – go to devtopia and compare. Create a pull request, get it approved … (the rest is like any other process) 
